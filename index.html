@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Char Qul</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">Audio Links
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="#Bismillah">Bismillah</a>
+        <a href="#Al-Fatiha">Al-Fatiha</a>
+        <a href="#Alif Lam Meem">Alif Lam Meem</a>
+        <a href="#ayat-ul-kursi">Ayat-ul-kursi</a>
+        <a href="#surah baqrah ki akhri 2 ayaat">Surah Baqrah ki akhri 2 ayaat</a>
+        <a href="#Al-Kafiroon">Al-Kafiroon</a>
+        <a href="#Al-Ikhlas">Al-Ikhlas</a>
+        <a href="#Al-Falaq">Al-Falaq</a>
+        <a href="#An Nas">An Nas</a>
+        <a href="#3Qul">Three Qul</a>
+        <a href="#mixsurah">Alhamdulillah to An-nas</a>
+      </div>
+    </div>
+  </div>
+  <h1>Al-Fatiha, Ayat-ul-kursi, Char Qul, Surah Baqrah ki akhri 2 ayaat, Alhamdulillah to An-nas</h1>
+  <div class="container">
+    <ul>
+      <li>
+        <div id="Bismillah">Bismillah
+      </li>
+      <audio src="Bismillah.mp3" controls loop></audio></li>
+      <li>
+        <div id="Al-Fatiha">Al-Fatiha</div>
+        <audio src="./Surat Al-Fatiha.mp3" controls></audio>
+      </li>
+      <li>
+        <div id="Alif Lam Meem">Alif Lam Meem</div>
+        <audio src="AlifLamMeem.mp3" controls></audio>
+      </li>
+
+      <li>
+        <div id="ayat-ul-kursi">Ayat-ul-kursi</div>
+        <audio src="Ayat-ul-kursi.mp3" controls></audio>
+      </li>
+      <li>
+        <div id="surah baqrah ki akhri 2 ayaat">Surah Baqrah ki akhri 2 ayaat</div>
+        <audio src="Surah Baqrah ki akhri 2 ayaat.mp3" controls></audio>
+      </li>
+      <li>
+        <div id="Al-Kafiroon">Al-kafiroon</div>
+        <audio src="./Surat Al-Kafiroon.mp3" controls></audio>
+      </li>
+
+      <li>
+        <div id="Al-Ikhlas">Al-Ikhlas</div>
+        <audio src="./Surat Al-Ikhlas.mp3" controls></audio>
+      </li>
+
+      <li>
+        <div id="Al-Falaq">Al-Falaq</div>
+        <audio src="./Surat Al-Falaq.mp3" controls></audio>
+      </li>
+
+      <li>
+        <div id="An Nas">An-Nas</div>
+        <audio src="./Surat An Nas.mp3" controls loop>
+      </li>
+
+      <li>
+        <div id="3Qul">3 Qul</div>
+        <audio src="./3Qul.mp3" controls loop>
+      </li>
+      <li>
+        <div id="mixsurah">Alhamdulillah to An-nas</div>
+        <audio src="Mix Surah.mp3" controls></audio>
+      </li>
+    </ul>
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      window.onclick = function (e) {
+        if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+    </script>
+  </div>
+  <footer>
+    <p>© Shahid Imam All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
